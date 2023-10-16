@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Roboto:wght@100&display=swap');
-body{
+
+body {
     /* font-family: 'Edu VIC WA NT Beginner', cursive; */
     font-size: 30px;
     margin: 0;
@@ -10,11 +11,22 @@ body{
     justify-content: center;
     background-color: black;
 }
-.clock{
-  position: absolute;
-  top:50%;
-  bottom: 50%;
-  color: aqua;
-  font-size: 50px;
 
+.clock {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Center the clock vertically */
+    color: aqua;
+    font-size: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
+    .clock {
+        font-size: 30px;
+    }
 }
